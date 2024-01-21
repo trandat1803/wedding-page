@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding planner page</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+         <div class="header row container">
+            <a href="#" class="logo"><img src="./imgs/logo.png" alt="Logo"></a>
+            <div class="toggleMenu" onclick="toggleMenu();">
+            </div>
+            <nav class="vavigation row">
+                <ul class="row">
+                    <li><a href="#">Our love story</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Wedding details</li>
+                    <li><a href="#">Wedding timeline</li>
+                    <li><a href="#">Getting there</li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+         </div>
+    </header>
+    <!--End Navigation-->
+
+    <!--Hero section-->
+    <section class="hero">
+        <video id="blurred-video" autoplay muted loop>
+            <source src="background-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content row container">
+            <div id="logo-container">
+                <img id="logo" src="./imgs/Logo.png" alt="Your Logo">
+            </div>
+        </div>
+    </section>
+
+    <!--Introduction-->
+    <section class="intro-phase">
+        <div class="introduction">
+            <h2 class="intro-h2">INTIMATE WEDDING</h2>
+            <p class="intro-h4">Vinh hạnh được đón tiếp bạn tại tiệc cưới thân mật của Khánh và Vy</p>
+            <p class="intro-p">
+            “Bạn chính là 1 trong 100 mảnh ghép của bữa tiệc ngày hôm đó. Với sự trân trọng và mong muốn được chia sẻ 
+            niềm hạnh phúc của chúng mình đến với những người thân thiết nhất, hy vọng mọi người sẽ có mặt 
+            để cùng tận hưởng khoảnh khắc trọng đại của cặp đôi Khánh và Vy”.
+            </p>
+        </div>
+    </section>
+
+    <!--story-->
+    <section class="story">
+            <div class="story-content">
+                <div class="row flex">
+                    <div>
+                        <h2>Our Love Story...</h2>
+                        <h4>
+                            Khánh và Vy đã cùng nhau trải qua mối tình năm năm bắt đầu từ thời còn là học sinh cấp 3. 
+                            Những kỉ niệm ngọt ngào từ thời thanh xuân đã chứng kiến họ cùng trưởng thành và cùng xây dựng những ước mơ chung. 
+                            Hành trình của chúng mình không chỉ là những khoảnh khắc ngọt ngào, mà còn là những thử thách cần cả hai phải vượt qua. 
+                            Tính cách tưởng chừng như trái ngược của Khánh và Vy nhưng lại hòa quyện thành một bản hòa âm tuyệt vời,    
+                            nơi mỗi người đều là một nửa hoàn hảo của đối phương.
+                            Cảm ơn vì đã chọn đồng hành cùng nhau trong những ngày tháng về sau.
+                       </h4>
+                    </div>
+                    <div class="img row"><img src="./imgs/COCOLILILI-203.jpg" alt=""></div>
+                </div>
+            </div>
+    </section>
+
+    <!--The venue-->
+    <section class="venue">
+        <div class="row-flex-container">
+            <div class="venue-content">
+                <h2>Gallery</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-117.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-120.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-204.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-206.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-209.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-212.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./imgs/COCOLILILI-214.jpg" alt=""></div>
+                </div>
+              </div>            
+        </div>
+    </section>
+
+    <!--accommodation-->
+    <section class="wedding-details">
+        <h2 class="wedding-h1">Wedding Details</h2>
+        <div class="details-container">
+            <p>16:30 | Ngày 27 Tháng 1 Năm 2024</p>
+            <h3>SHERATON CẦN THƠ</h3>
+            <p>Tầng 5 - ORCHID BALLROOM</p>
+            <p>Trang phục</p>
+            <div class="dress-code">
+                <div class="color-circle color1"></div>
+                <div class="color-circle color2"></div>
+                <div class="color-circle color3"></div>
+            </div>
+
+            <p>Khách mời vui lòng chọn trang phục dựa trên 3 màu sắc trên để có những bức ảnh đẹp 
+                cùng nhau và phù hợp với không gian tiệc cưới chúng mình đã chuẩn bị.
+            </p>
+        </div>
+    </section>
+
+    <!--timeline-->
+    <section class="wedding-timeline">
+        <h2>Wedding Timeline</h2>
+        <div class="timeline">
+            <div class="event">
+            <h3>Welcome</h3>
+            <p>16:30 - 17:00</p>
+        </div>
+        <div class="event">
+            <h3>Photo moment</h3>
+            <p>17:00 - 18:00</p>
+        </div>
+        <div class="event">
+            <h3>Wedding ceremony</h3>
+            <p>18:00</p>
+        </div>
+        <div class="event">
+            <h3>Diner</h3>
+            <p>18:30</p>
+        </div>
+        <div class="event">
+            <h3>A secret</h3>
+            <p>19:00</p>
+        </div>
+        <div class="event">
+            <h3>Party</h3>
+            <p>20:00</p>
+        </div>
+        </div>
+    </section>
+
+    <!--How to get there-->
+    <section class="getting-there">
+        <h1>Getting there</h1>
+        <div class="note">
+            <h3>SHERATON Can Tho</h3>
+            <p>
+                Chúng mình rất vui mừng được gặp các bạn tại:<br>
+                209 Đường 3/2,<br>
+                Xuân Khánh, Ninh Kiều,<br>
+                Thành Phố Cần Thơ
+            </p>
+        </div>
+        
+        <div class="note">
+            <h3>Hướng dẫn gửi xe</h3>
+            <p>
+                Tầng B3 &lpar;không gửi xe tầng B2 chung với trung tâm mua sắm&rpar;. <br>
+                Tầng B3 có khu vực để xe riêng cho khách dự tiệc cưới.<br>
+                Vào thang máy theo lối lên ballroom, bấm lên tầng 5.
+            </p>
+        </div>
+        <div class="note">
+            <h3>Mọi người không nên tự lái xe khi sử dụng rượu bia</h3>
+            <p>
+                Khách mời có thể book phương tiện qua Apps: Grab, Xanh Taxi,... <br>
+            </p>
+        </div>
+    </section>
+
+    <!--registration-->
+    <section class="rsvp">
+        <div class="container">
+            <h2>Thank you !</h2>
+            <h2>We hope to see you soon.</h2>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="contactable-people">
+            <div class="contact-person">
+                <h3>Vie</h3>
+                <p>Telephone: 0907621642</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vytrannguyentruc" target="_blank"><img src="./imgs/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/vie.thisme/" target="_blank"><img src="./imgs/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="contact-person">
+                <h3>Kei</h3>
+                <p>Telephone: 0788992785</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/luubaokhanh260201" target="_blank"><img src="./imgs/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/kei.begood/" target="_blank"><img src="./imgs/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

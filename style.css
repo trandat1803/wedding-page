@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lustria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Lexend+Zetta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Ledger&display=swap');
+
+
+*,*::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Jacques+Francois', serif;
+    font-weight: 400;
+    color: var(--cl--2--);
+}
+
+body {
+    --cl--1--: #fcf9f7;
+    --cl--2--: #2b1105;
+    --cl--3--: #c6754d;
+    background: white;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(60px, 10vw, 100px);
+    line-weight: clamp(65px, 10vw, 105px);
+}
+
+h2 {
+    font-size: clamp(30px, 5vw, 40px);
+    line-weight: clamp(35px, 5vw, 45px);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: clamp(25px, 5vw, 35px);
+    line-weight: clamp(30px, 5vw, 40px);
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: clamp(15px, 5vw, 20px);
+    line-weight: clamp(20px, 5vw, 25px);
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0,3s ease-in-out;
+    -webkit-transition: 0,3s ease-in-out;
+    -moz-transition: 0,3s ease-in-out;
+    -ms-transition: 0,3s ease-in-out;
+    -o-transition: 0,3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.flex {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(2em, 5vw, 5em);
+}
+
+.flex>* {
+    flex: 1 1 25em;
+}
+
+.column {
+    display: grid;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*navigation*/
+header {
+    position: sticky;
+    top: 0;
+    background: #fcf3e5;
+    z-index: 1000;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fcf3e5;
+    display: flex;
+}
+
+.logo {
+    max-width: 80px; /* Adjust the max-width of your logo */
+    height: auto;
+
+}
+
+nav {
+    flex-grow: 0;
+    padding: 10px;
+}
+
+nav ul {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+nav a, footer a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Lustria', serif;
+}
+
+nav a:hover, footer a:hover {
+    color: var(--cl--3--);
+}
+
+/*hero section*/
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero video {
+    max width: 100%;
+}
+
+.hero-content {
+    align items: center;
+    min-height: calc(100vh - 141.6px);
+}
+
+#blurred-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+#logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+#logo {
+    width: 300px; /* Adjust the size of your logo */
+    height: auto;
+}
+
+/*introduction*/
+.intro-phase {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: #fcf3e5;
+}
+.introduction {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-phase p{
+    font-family: 'Ledger', sans-serif;
+}
+
+.intro-h2 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-family: 'Italiana', serif;
+}
+
+
+/*Story*/
+.story {
+    background: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 4em 0;
+}
+
+.story-content {
+    position: relative;
+}
+
+.story .flex+.flex {
+    padding-top: 4em;
+}
+
+.story h4 {
+    color: var(--cl--1--);
+    font-family: 'Grape Nuts', serif;
+    padding: 2em;
+    line-height: 1,5cm;
+    max-height: 3cm;
+}
+
+.story h2{
+    color: var(--cl--1--);
+    padding: 1em;
+    font-family: 'Italiana', serif;
+}
+
+.story .flex:nth-of-type(1) img{
+    object-fit: cover;
+    border-radius: 50% 0 0 0;
+    -webkit-border-radius: 50% 0 0 0;
+    -moz-border-radius: 50% 0 0 0;
+    -ms-border-radius: 50% 0 0 0;
+    -o-border-radius: 50% 0 0 0;
+}
+
+/*venue*/
+.venue {
+    background-color: #fcf3e5;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    margin: 4em 0;
+    overflow: hidden;
+}
+
+.venue-content {
+    background: rgba(252, 249, 247,  0.8);
+}
+
+.venue h2 {
+    padding: 0.2em 0;
+    text-align: center;
+    font-family: 'Italiana', serif;
+}
+
+.venue-content div {
+    padding top: 0.3em;
+}
+
+.venue-content div p {
+    padding top: 0.3em;
+}
+
+.mySwiper {
+    position: relative;
+    max-width: 250px;
+}
+
+.mySwiper img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/*accommodation*/
+.wedding-details {
+    text-align: center;
+}
+
+.wedding-h1 {
+    background-color: black;
+    font-family: 'Italiana', serif;
+    color: white;
+    padding: 30px;
+}
+
+.details-container p{
+    font-family: 'League Spartan', serif;
+    font-size: 30px;
+}
+
+.details-container h3 {
+    font-family: 'Lexend Zetta';
+}
+
+.details-container {
+    background-color: #fcf3e5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.details-container p {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.dress-code {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 2px solid black; /* Added border style */
+}
+
+.color1 {
+    background-color: black;
+}
+
+.color2 {
+    background-color: white;
+}
+
+.color3 {
+    background-color: #fcf3e5;
+}
+
+/*wedding timeline*/
+.wedding-timeline {
+    padding: 50px;
+    text-align: center;
+}
+
+.wedding-timeline h2 {
+    color: #333;
+    font-family: 'Pinyon Script', serif;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    position: relative;
+    width: 50%;
+    background-color: #fcf3e5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: left;
+}
+
+.event::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent #fcf3e5;
+    transform: translateY(-50%);
+}
+
+.event h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event p {
+    color: #666;
+}
+
+//Getting there
+.getting-there {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fcf3e5;
+    color: #333;
+}
+
+.getting-there h1{
+    font-family: 'Italiana', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+.note {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.getting-there h3 {
+    color: #e5d2b4;
+    font-family: "Italiana";/* Orange color for the heading */
+}
+
+//registration
+.rsvp p {
+    text-align: center;
+}
+.rsvp h2{
+    text-align: center;
+    font-family: 'Italiana';
+}
+/*footer*/
+footer {
+    background-color: #fcf3e5;
+    text-align: center;
+}
+
+.contactable-people {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.contact-person {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/*media*/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop {
+        display: none;
+    }
+}
